@@ -18,7 +18,8 @@ public class T2_LinkTextPractice {
         Thread.sleep(2000);
 
      //   3- Click to A/B Testing from top of the list.
-        WebElement abTestLink = driver.findElement(By.linkText("A/B Testing"));
+     //   WebElement abTestLink = driver.findElement(By.linkText("A/B Testing"));
+        WebElement abTestLink = driver.findElement(By.partialLinkText("A/B"));
         abTestLink.click();
 
      //   4- Verify title is:  Expected: No A/B Test
